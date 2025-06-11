@@ -1,6 +1,6 @@
 
 @host = http://localhost:3000
-@productId = 2
+@productId = 1
 
 ### Testing API
 GET {{host}}/
@@ -29,7 +29,7 @@ Content-Type: application/json
 
 GET {{host}}/product/{{productId}}
 
-### Patch API
+### Patch - Update Product Details
 
 PATCH {{host}}/product/{{productId}}
 Content-Type: application/json
@@ -39,3 +39,7 @@ Content-Type: application/json
   "price": 120000
 }
 
+
+### Patch - Delete Product
+
+DELETE {{host}}/product/{{productId}}
