@@ -20,7 +20,13 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "prepare": "husky",
     "test:unit": "jest --config jest.config.js --coverage",
-    "test:integration": "jest --config jest.integration.config.js --passWithNoTests"
+    "test:integration": "jest --config jest.integration.config.js --passWithNoTests",
+    "prisma": "prisma",
+    "migrate": "prisma migrate deploy --schema prisma/schema.prisma",
+    "prisma:generate": "npx prisma generate",
+    "prisma:studio": "prisma studio --schema prisma/schema.prisma",
+    "prisma:db_pull": "npx prisma db pull",
+    "prisma:migrate:dev": "npx prisma migrate dev"
   },
   "dependencies": {
     "@nestjs/common": "^11.0.1",

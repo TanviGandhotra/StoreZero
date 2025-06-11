@@ -1,0 +1,41 @@
+
+@host = http://localhost:3000
+@productId = 2
+
+### Testing API
+GET {{host}}/
+
+
+### Products APIs
+
+### List all products
+GET {{host}}/product
+
+### Create new product
+
+POST {{host}}/product
+Content-Type: application/json
+
+{
+  "name": "Iphone 16 pro",
+  "description": "Apple Iphone 16 pro, 128GB, Silver Grey color",
+  "price": 90000,
+  "stock": 2,
+  "categoryId": 2,
+  "imageUrl": ""
+}
+
+### Get Product using Id
+
+GET {{host}}/product/{{productId}}
+
+### Patch API
+
+PATCH {{host}}/product/{{productId}}
+Content-Type: application/json
+
+{
+  "name": "IPhone 16 pro Max",
+  "price": 120000
+}
+

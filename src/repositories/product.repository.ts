@@ -30,19 +30,13 @@ export class ProductRepository {
   }
 
   async update(id: number, updateProductDto: UpdateProductDto) {
-    return prisma.product.upsert({
+    return prisma.product.update({
       where: { id },
-      update: {
-        name: updateProductDto.name,
-        price: updateProductDto.price,
-        description: updateProductDto.description,
-        image: updateProductDto.imageUrl,
-      },
-      create: {
-        name: updateProductDto.name,
-        price: updateProductDto.price,
-        description: updateProductDto.description,
-        image: updateProductDto.imageUrl,
+      data: {
+        name: updateProductDto?.name,
+        price: updateProductDto?.price,
+        description: updateProductDto?.description,
+        image: updateProductDto?.imageUrl,
       },
     });
   }
