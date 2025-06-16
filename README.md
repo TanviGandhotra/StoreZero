@@ -4,9 +4,6 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
   <p align="center">A robust e-commerce application built with **NestJS** , **Prisma** , **PostgreSQL** , and **TypeScript** . This project includes user authentication, CRUD operations, and more.</p>
     <p align="center">
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
@@ -29,6 +26,7 @@
 ## 🛠 Installation
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/building-for-fun/StoreZero.git
    cd StoreZero
@@ -57,7 +55,6 @@ Copy the `.env.example` file to .env:
 
 Update the .env file with your configuration (e.g., database URL, JWT secret, etc.).
 
-
 <hr/>
 
 ▶️ Running the Application
@@ -69,8 +66,7 @@ Start the application:
 npm run start:dev
 ```
 
-The application will be available at http://localhost:3000.
-
+The application will be available at <http://localhost:3000>.
 
 With Docker
 Build and start the Docker containers:
@@ -79,8 +75,7 @@ Build and start the Docker containers:
 docker-compose up --build
 ```
 
-The application will be available at http://localhost:3000.
-
+The application will be available at <http://localhost:3000>.
 
 <hr/>
 
@@ -109,10 +104,8 @@ npm run test
 
 <hr/>
 
-📄 License 
+📄 License
 This project is licensed under the MIT License.
-
-
 
 If you would like to contribute to the project then kindly go through [Contributing Guidelines](CONTRIBUTING.md) to understand everything from setup to necessary instructions.
 
@@ -120,7 +113,6 @@ If you would like to contribute to the project then kindly go through [Contribut
 <h2 align = "center">Our Contributors ❤️</h2>
 <div align = "center">
  <h3>Thank you for contributing to our repository</h3>
-
 
 <p><a href="https://github.com/building-for-fun/StoreZero/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=building-for-fun/StoreZero" />
