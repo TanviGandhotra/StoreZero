@@ -29,7 +29,10 @@ export class ProductRepository {
     });
   }
 
-  async update(id: number, updateProductDto: UpdateProductDto) {
+  async update(
+    id: number,
+    updateProductDto: UpdateProductDto,
+  ): Promise<Product> {
     return prisma.product.update({
       where: { id },
       data: {
